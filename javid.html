@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Javid Jamae - Cardswap</title>
+
+    <!-- Bootstrap -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="cardswap.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Segment.io -->
+    <script type="text/javascript">
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.1.0";
+      analytics.load("LfKu0uZHxGGSPUK9EF138HBMXuPLSKoy");
+      analytics.page('Javid')
+      }}();
+    </script>
+  </head>
+  <body>
+    <div class="container top-2">
+      <div class="row vertical-align">
+        <div class="col-sm-5 col-xs-5 ">
+          <img src="javid-jamae.png" class="img-responsive img-circle" alt="Javid Jamae"/>
+        </div>
+        <div class="col-sm-7 col-xs-7">
+          <h3>Javid Jamae</h3>
+          <h5>Cardswap</h5>
+        </div>
+      </div>
+      <div class="row top-1">
+        <div class="col-sm-12">
+          <a href="http://www.calendly.com/javidjamae" id="schedule-button" class="btn btn-warning btn-full-width">SCHEDULE A MEETING</a>
+        </div>
+      </div>
+      <div class="row top-1">
+        <div class="col-sm-12">
+          <strong>Email:</strong> <a id="email-link" href="mailto:javidjamae@gmail.com">javidjamae@gmail.com</a>
+        </div>
+      </div>
+      <div class="row top-1">
+        <div class="col-sm-12">
+          <strong>Phone:</strong> <a id="phone-link" href="tel:713-502-5931">713.502.5931</a>
+        </div>
+      </div>
+      <div class="row top-1">
+        <div class="col-sm-12">
+          <strong>Website:</strong> <a id="website-link" href="http://www.getcardswap.com">www.getcardswap.com</a>
+        </div>
+      </div>
+      <div class="row top-1">
+        <div class="col-sm-12">
+          <strong>Company Summary:</strong> Cardswap is building the worlds fastest way to schedule followup appointments with people you meet in person.
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+      var profile = 'Javid',
+        scheduleLink = document.getElementById('schedule-button'),
+        emailLink = document.getElementById('email-link'),
+        phoneLink = document.getElementById('phone-link'),
+        websiteLink = document.getElementById('website-link');
+      analytics.trackLink(scheduleLink, 'Clicked Schedule Button', { profile: profile });
+      analytics.trackLink(emailLink, 'Clicked Email Link', { profile: profile });
+      analytics.trackLink(phoneLink, 'Clicked Phone Link', { profile: profile });
+      analytics.trackLink(websiteLink, 'Clicked Website Link', { profile: profile });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+.top-2 {
+  margin-top: 2em;
+}
+
+.top-1 {
+  margin-top: 1em;
+}
+
+.btn-full-width {
+  display: block;
+  width: 100%;
+}
+
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
