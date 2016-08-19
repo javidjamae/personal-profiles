@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Javid Jamae - Cardswap</title>
+    <title>Javid Jamae - Brass Tacks Ventures</title>
 
     <!-- Bootstrap -->
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -34,7 +34,7 @@
         </div>
         <div class="col-sm-7 col-xs-7">
           <h3>Javid Jamae</h3>
-          <h5>Cardswap</h5>
+          <h5>CEO/Founder - Brass Tacks Ventures</h5>
         </div>
       </div>
       <div class="row top-1">
@@ -54,12 +54,17 @@
       </div>
       <div class="row top-1">
         <div class="col-sm-12">
-          <strong>Website:</strong> <a id="website-link" href="http://www.getcardswap.com">www.getcardswap.com</a>
+          <strong>LinkedIn:</strong> <a id="linkedin-link" href="http://www.linkedin.com/in/jamae">www.linkedin.com/in/jamae</a>
         </div>
       </div>
       <div class="row top-1">
         <div class="col-sm-12">
-          <strong>Company Summary:</strong> Cardswap is building the world's fastest way to schedule followup appointments with people you meet in person.
+          <strong>Website:</strong> <a id="website-link" href="https://medium.com/@javidjamae/announcing-brass-tacks-ventures-a-startup-studio-9dc503a2602#.3pitzchhe">www.brasstacksventures.com</a>
+        </div>
+      </div>
+      <div class="row top-1">
+        <div class="col-sm-12">
+          <strong>Company Summary:</strong> Brass Tacks Ventures is a startup studio and venture firm based in San Francisco
         </div>
       </div>
     </div>
@@ -74,10 +79,12 @@
         scheduleLink = document.getElementById('schedule-button'),
         emailLink = document.getElementById('email-link'),
         phoneLink = document.getElementById('phone-link'),
+        linkedinLink = document.getElementById('linkedin-link'),
         websiteLink = document.getElementById('website-link');
       analytics.trackLink(scheduleLink, 'Clicked Schedule Button', { profile: profile });
       analytics.trackLink(emailLink, 'Clicked Email Link', { profile: profile });
       analytics.trackLink(phoneLink, 'Clicked Phone Link', { profile: profile });
+      analytics.trackLink(linkedinLink, 'Clicked LinkedIn Link', { profile: profile });
       analytics.trackLink(websiteLink, 'Clicked Website Link', { profile: profile });
     </script>
   </body>

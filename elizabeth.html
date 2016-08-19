@@ -54,6 +54,11 @@
       </div>
       <div class="row top-1">
         <div class="col-sm-12">
+          <strong>LinkedIn:</strong> <a id="linkedin-link" href="https://www.linkedin.com/in/elizabeth-jamae-7575b15">www.linkedin.com/in/elizabeth-jamae-7575b15</a>
+        </div>
+      </div>
+      <div class="row top-1">
+        <div class="col-sm-12">
           <strong>Website:</strong> <a id="website-link" href="http://www.jamaelaw.com">www.jamaelaw.com</a>
         </div>
       </div>
@@ -74,10 +79,12 @@
         scheduleLink = document.getElementById('schedule-button'),
         emailLink = document.getElementById('email-link'),
         phoneLink = document.getElementById('phone-link'),
+        linkedinLink = document.getElementById('linkedin-link'),
         websiteLink = document.getElementById('website-link');
       analytics.trackLink(scheduleLink, 'Clicked Schedule Button', { profile: profile });
       analytics.trackLink(emailLink, 'Clicked Email Link', { profile: profile });
       analytics.trackLink(phoneLink, 'Clicked Phone Link', { profile: profile });
+      analytics.trackLink(linkedinLink, 'Clicked LinkedIn Link', { profile: profile });
       analytics.trackLink(websiteLink, 'Clicked Website Link', { profile: profile });
     </script>
   </body>
